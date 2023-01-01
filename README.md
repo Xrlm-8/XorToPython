@@ -31,9 +31,9 @@
 <br>
 <h2>Vamos instaciar a função me variaveis agora...</h2>
 <code>
-user_xor = calculo_xor(str_decoded) # Chamando Calculo XOR para o Evento Socket
-hex_chec = user_xor['hex_chec'] # Retorna XOR do Byte
-checksum = user_xor['checksum'] # Retorna XOR do Calculo
+    user_xor = calculo_xor(str_decoded) # Chamando Calculo XOR para o Evento Socket
+    hex_chec = user_xor['hex_chec'] # Retorna XOR do Byte
+    checksum = user_xor['checksum'] # Retorna XOR do Calculo
 </code>
 
 <br>
