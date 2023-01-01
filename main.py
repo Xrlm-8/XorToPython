@@ -1,8 +1,10 @@
-# CalculoXorForPython
-<h1 >Calculadora XOR em Python </h1>
-<p>Vamos começar recebendo meus dados, em bytes, após transformar em hexadecimal, vamos colocar em um array</p> <br>
+# Recebe o arquivo em Byte
+byte = b'\x07\x94E\t\x00\xdf\xc4\xd4\xef'
+str_decoded = hex(byte) # Transformar em Hexadecimal
 
-<code>
+def calculo_xor(str_decoded):
+    index = 0
+    array = []
     while index < len(str_decoded):
         percorre = slice(index,index + 2)
         res = str_decoded[percorre]
@@ -26,24 +28,12 @@
         'checksum': checksum
     }
     return var
-</code>
-
-<br>
-<h2>Vamos instaciar a função me variaveis agora...</h2>
-<code>
 user_xor = calculo_xor(str_decoded) # Chamando Calculo XOR para o Evento Socket
 hex_chec = user_xor['hex_chec'] # Retorna XOR do Byte
 checksum = user_xor['checksum'] # Retorna XOR do Calculo
-</code>
 
-<br>
-<p>Fazendo a verificação do Checksum</p>
-
-<br>
-<code>
 if(hex_chec == checksum): # Confirma Checksum
     print("Checksum Correto",hex_chec," Corresponde com o calculo >",checksum,"\n")
 else:
     print("checksum Incorreto",hex_chec, "Não corresponde com o calculo > ", checksum,"\n")
 print ("Continua codigo\n")
-</code>
