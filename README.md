@@ -34,7 +34,7 @@
 
 </code>
 
-<h2>Vamos instaciar a função me variaveis agora...</h2>
+<h2>Vamos instaciar a função em variaveis agora...</h2>
 
 <code>
     
