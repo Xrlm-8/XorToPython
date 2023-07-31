@@ -2,6 +2,8 @@
 byte = b'\x07\x94E\t\x00\xdf\xc4\xd4\xef'
 str_decoded = hex(byte) # Transformar em Hexadecimal
 
+
+# Esse script precisa de manutenção
 def calculo_xor(str_decoded):
     index = 0
     array = []
